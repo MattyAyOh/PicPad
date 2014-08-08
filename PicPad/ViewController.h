@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate> {
+    UIImagePickerController *picker;
+    UIImagePickerController *picker2;
+    UIImage *image;
+    IBOutlet UIImageView *imageview;
+}
+- (IBAction)showActionSheet:(id)sender; //Declare method to show action sheet
+- (IBAction)TakePhoto;
+- (IBAction)ChooseExisting;
 @end

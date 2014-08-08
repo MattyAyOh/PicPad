@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A747C7918907F1F00472F32 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A747C7818907F1F00472F32 /* logo.jpg */; };
+		3A747C7B1890809800472F32 /* logonav.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A747C7A1890809800472F32 /* logonav.jpg */; };
+		3A747C7D189082CB00472F32 /* logosmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A747C7C189082CB00472F32 /* logosmall.png */; };
+		3A9B752E1890633300A1E625 /* Photoneeded.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9B752D1890633300A1E625 /* Photoneeded.png */; };
 		3AC79DB1187B4508006D55A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC79DB0187B4508006D55A0 /* Foundation.framework */; };
 		3AC79DB3187B4508006D55A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC79DB2187B4508006D55A0 /* CoreGraphics.framework */; };
 		3AC79DB5187B4508006D55A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC79DB4187B4508006D55A0 /* UIKit.framework */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A747C7818907F1F00472F32 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		3A747C7A1890809800472F32 /* logonav.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logonav.jpg; sourceTree = "<group>"; };
+		3A747C7C189082CB00472F32 /* logosmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logosmall.png; sourceTree = "<group>"; };
+		3A9B752D1890633300A1E625 /* Photoneeded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Photoneeded.png; sourceTree = "<group>"; };
 		3AC79DAD187B4508006D55A0 /* PicPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC79DB0187B4508006D55A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AC79DB2187B4508006D55A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +134,10 @@
 		3AC79DB7187B4508006D55A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A747C7818907F1F00472F32 /* logo.jpg */,
+				3A747C7C189082CB00472F32 /* logosmall.png */,
+				3A747C7A1890809800472F32 /* logonav.jpg */,
+				3A9B752D1890633300A1E625 /* Photoneeded.png */,
 				3AC79DB8187B4508006D55A0 /* PicPad-Info.plist */,
 				3AC79DB9187B4508006D55A0 /* InfoPlist.strings */,
 				3AC79DBC187B4508006D55A0 /* main.m */,
@@ -199,6 +211,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Matthew Ao";
 				TargetAttributes = {
+					3AC79DAC187B4508006D55A0 = {
+						DevelopmentTeam = HL4WWQQF9X;
+					};
 					3AC79DCD187B4508006D55A0 = {
 						TestTargetID = 3AC79DAC187B4508006D55A0;
 					};
@@ -228,7 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A747C7B1890809800472F32 /* logonav.jpg in Resources */,
 				3AC79DC9187B4508006D55A0 /* Images.xcassets in Resources */,
+				3A747C7D189082CB00472F32 /* logosmall.png in Resources */,
+				3A747C7918907F1F00472F32 /* logo.jpg in Resources */,
+				3A9B752E1890633300A1E625 /* Photoneeded.png in Resources */,
 				3AC79DBB187B4508006D55A0 /* InfoPlist.strings in Resources */,
 				3AC79DC4187B4508006D55A0 /* Main.storyboard in Resources */,
 			);
@@ -378,10 +397,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicPad/PicPad-Prefix.pch";
 				INFOPLIST_FILE = "PicPad/PicPad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +413,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PicPad/PicPad-Prefix.pch";
 				INFOPLIST_FILE = "PicPad/PicPad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +485,7 @@
 				3AC79DE1187B4508006D55A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC79DE2187B4508006D55A0 /* Build configuration list for PBXNativeTarget "PicPadTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +494,7 @@
 				3AC79DE4187B4508006D55A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
